@@ -12,7 +12,8 @@ $text-color: #fff;
 
 html {
   scroll-behavior: smooth;
-  //   overflow-x: hidden;
+    // overflow-x: hidden;
+  // margin-left: 65px;
 }
 
 body {
@@ -37,6 +38,7 @@ section,
 footer,
 header {
   display: flex;
+  
 }
 
 #main-footer {
@@ -67,6 +69,7 @@ footer {
   opacity: 0.85;
   width: 65px;
   height: 100vh;
+  overflow: hidden;
 
   ul {
     list-style: none;
@@ -116,6 +119,10 @@ footer {
     height: 40px;
   }
 }
+
+
+
+
 
 #home {
   background-image: linear-gradient(
@@ -380,6 +387,7 @@ footer {
   background-color: $primary-color;
   text-align: center;
   padding: 20px;
+  
 
   h1 {
     margin: 0 0 30px 0;
@@ -389,13 +397,14 @@ footer {
     flex-flow: row wrap;
     justify-content: space-evenly;
     // background-color: #000;
-    height: 350px;
-    width: 70%;
+    height: 55vh;
+    width: 75%;
     padding: 10px;
 
     .project-card {
-      height: 150px;
-      width: 250px;
+      height: 40%;
+      min-width: 250px;
+      width:22%;
       margin: 5px;
       border-radius: 10px;
 
@@ -739,24 +748,29 @@ footer {
   }
 }
 
-@media screen and (max-width: 1024px) {
-}
 
 // prevents projects from caving in on the contact section
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1024px) {
   #projects {
     height: 100vh;
   }
+
+  // #content-text {
+    
+  //   p {
+  //     font-size: .8rem;
+  //   }
+  // }
 }
 
 // tablets and the like
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   #home-text {
     font-size: 1.8rem;
     text-align: center;
   }
   #about {
-    height: 140vh;
+    height: 160vh;
 
     #personal-content {
       flex-direction: column;
@@ -768,28 +782,66 @@ footer {
         text-align: center;
       }
     }
+    #skill-grid {
+      margin-top: 40px;
+    }
   }
 }
 // Mobile Devices
 @media screen and (max-width: 480px) {
+
+  #sidebar {
+    display: none;
+  }
+
   #home-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
+    h1 {
+      font-size: 20px;
+    }
   }
   #about {
-    height: 140vh;
+    height: 210vh;
+    #about-content {height: 1000px;}
 
     #personal-content {
       flex-direction: column;
       align-items: center;
       justify-content: center;
       #content-text {
-        width: 150px;
+        width: 200px;
         font-size: 0.9rem;
         text-align: center;
       }
     }
+    #skill-grid{
+      svg {
+        height: 8%;
+        width: 8%;
+      }
+    }
   }
+  #projects{
+    height: 110vh;
+    // position: relative;
+    // margin-top: 500px;
+  }
+
+  #contact{
+    height: 80vh;
+    h1 {
+      margin-top: 20px
+    }
+  #contact-info {
+    flex-direction: column;
+    height: 400px;
+    margin-top: 10px;
+    a {
+      font-size: 1rem;
+    }
+  }
+}
 }
 
 @keyframes fadeDown {
