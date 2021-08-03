@@ -3,6 +3,7 @@ $primary-color: #071673;
 $secondary-color: #071673;
 $text-color: #fff;
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -840,6 +841,32 @@ footer {
     a {
       font-size: 1rem;
     }
+  }
+}
+}
+
+@media screen and (min-width: 2500px){
+  #skill-grid {
+    // margin-top: 20px;
+    height: 120%;
+  }
+  #about {
+    height: 70vh;
+   #personal-content{
+    width: 40%;
+    justify-content: space-between;
+    #self-photo {
+      height: 400px;
+      width: 300px;
+    }
+    #content-text{
+      width: 1000px;
+      p{
+        font-size: 2rem;
+  
+      }
+    }
+    
   }
 }
 }

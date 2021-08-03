@@ -956,6 +956,31 @@ footer {
   }
 }
 
+@media screen and (min-width: 2500px) {
+  #skill-grid {
+    height: 120%;
+  }
+  #about {
+    height: 70vh;
+  }
+  #about #personal-content {
+    width: 40%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #about #personal-content #self-photo {
+    height: 400px;
+    width: 300px;
+  }
+  #about #personal-content #content-text {
+    width: 1000px;
+  }
+  #about #personal-content #content-text p {
+    font-size: 2rem;
+  }
+}
+
 @-webkit-keyframes fadeDown {
   0% {
     opacity: 0;
