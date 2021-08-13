@@ -68,7 +68,6 @@ footer {
   opacity: 0.85;
   width: 65px;
   height: 100vh;
-  overflow: hidden;
 }
 
 #sidebar ul {
@@ -99,7 +98,6 @@ footer {
           flex-flow: row nowrap;
   color: #fff;
   background-color: #000;
-  z-index: 2;
   width: 150px;
 }
 
@@ -780,7 +778,7 @@ footer {
 }
 
 .modal .modal-content #modal-body #project-demo {
-  width: 50%;
+  width: 65%;
   height: 100%;
   margin: 0;
   background-color: #0c2d8a;
@@ -807,9 +805,14 @@ footer {
   height: 40px;
   border-radius: 4px;
   padding: 7px;
+  margin: 0px 5px 0px 7px;
   border: none;
   background-color: #000;
   color: white;
+}
+
+.modal .modal-content #modal-footer .github-link#live-link {
+  width: 120px;
 }
 
 .modal .modal-content #modal-footer .github-link i {

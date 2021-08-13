@@ -15,7 +15,7 @@ const projects = [
     screenshotpath: "./assets/portfolio-screenshot.png",
     description: "First iteration of my personal site that you're on now! Made entirely in HTML, SCSS/CSS3, and Jquery/Vanilla Javascript.",
     srcLink: "https://github.com/Jax247/personal-projects/tree/master/portfolio",
-    liveLink: '#',
+    liveLink: 'jax247.github.io',
   },
   {
     name: "Crypt",

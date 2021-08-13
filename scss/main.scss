@@ -3,9 +3,8 @@ $primary-color: #071673;
 $secondary-color: #071673;
 $text-color: #fff;
 
-
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; 
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -13,7 +12,7 @@ $text-color: #fff;
 
 html {
   scroll-behavior: smooth;
-    // overflow-x: hidden;
+  // overflow-x: hidden;
   // margin-left: 65px;
 }
 
@@ -39,7 +38,6 @@ section,
 footer,
 header {
   display: flex;
-  
 }
 
 #main-footer {
@@ -70,7 +68,6 @@ footer {
   opacity: 0.85;
   width: 65px;
   height: 100vh;
-  overflow: hidden;
 
   ul {
     list-style: none;
@@ -85,7 +82,6 @@ footer {
       flex-flow: row nowrap;
       color: #fff;
       background-color: #000;
-      z-index: 2;
       width: 150px;
     }
   }
@@ -120,10 +116,6 @@ footer {
     height: 40px;
   }
 }
-
-
-
-
 
 #home {
   background-image: linear-gradient(
@@ -388,7 +380,6 @@ footer {
   background-color: $primary-color;
   text-align: center;
   padding: 20px;
-  
 
   h1 {
     margin: 0 0 30px 0;
@@ -405,7 +396,7 @@ footer {
     .project-card {
       height: 40%;
       min-width: 250px;
-      width:22%;
+      width: 22%;
       margin: 5px;
       border-radius: 10px;
 
@@ -478,7 +469,7 @@ footer {
         text-align: left;
         cursor: pointer;
         i {
-            margin-right: 8px;
+          margin-right: 8px;
         }
       }
     }
@@ -498,13 +489,13 @@ footer {
         margin: 7px;
         padding: 10px;
         font-size: 24px;
-        i{
-            margin-right: 5px;
+        i {
+          margin-right: 5px;
         }
       }
     }
     // .contact-links {
-        // text-decoration: underline;
+    // text-decoration: underline;
     // }
   }
   //   justify-content: center;
@@ -670,7 +661,7 @@ footer {
       }
 
       #project-demo {
-        width: 50%;
+        width: 65%;
         height: 100%;
         margin: 0;
         background-color: rgb(12, 45, 138);
@@ -693,10 +684,13 @@ footer {
         height: 40px;
         border-radius: 4px;
         padding: 7px;
+        margin: 0px 5px 0px 7px;
         border: none;
         background-color: #000;
         color: white;
-
+        &#live-link {
+          width: 120px;
+        }
         i {
           margin: 5px;
         }
@@ -704,8 +698,6 @@ footer {
     }
   }
 }
-
-
 
 /* The Close Button */
 .close {
@@ -749,7 +741,6 @@ footer {
   }
 }
 
-
 // prevents projects from caving in on the contact section
 @media screen and (max-width: 1024px) {
   #projects {
@@ -757,7 +748,7 @@ footer {
   }
 
   // #content-text {
-    
+
   //   p {
   //     font-size: .8rem;
   //   }
@@ -790,7 +781,6 @@ footer {
 }
 // Mobile Devices
 @media screen and (max-width: 480px) {
-
   #sidebar {
     display: none;
   }
@@ -804,7 +794,9 @@ footer {
   }
   #about {
     height: 210vh;
-    #about-content {height: 1000px;}
+    #about-content {
+      height: 1000px;
+    }
 
     #personal-content {
       flex-direction: column;
@@ -816,59 +808,57 @@ footer {
         text-align: center;
       }
     }
-    #skill-grid{
+    #skill-grid {
       svg {
         height: 8%;
         width: 8%;
       }
     }
   }
-  #projects{
+  #projects {
     height: 110vh;
     // position: relative;
     // margin-top: 500px;
   }
 
-  #contact{
+  #contact {
     height: 80vh;
     h1 {
-      margin-top: 20px
+      margin-top: 20px;
     }
-  #contact-info {
-    flex-direction: column;
-    height: 400px;
-    margin-top: 10px;
-    a {
-      font-size: 1rem;
+    #contact-info {
+      flex-direction: column;
+      height: 400px;
+      margin-top: 10px;
+      a {
+        font-size: 1rem;
+      }
     }
   }
 }
-}
 
-@media screen and (min-width: 2500px){
+@media screen and (min-width: 2500px) {
   #skill-grid {
     // margin-top: 20px;
     height: 120%;
   }
   #about {
     height: 70vh;
-   #personal-content{
-    width: 40%;
-    justify-content: space-between;
-    #self-photo {
-      height: 400px;
-      width: 300px;
-    }
-    #content-text{
-      width: 1000px;
-      p{
-        font-size: 2rem;
-  
+    #personal-content {
+      width: 40%;
+      justify-content: space-between;
+      #self-photo {
+        height: 400px;
+        width: 300px;
+      }
+      #content-text {
+        width: 1000px;
+        p {
+          font-size: 2rem;
+        }
       }
     }
-    
   }
-}
 }
 
 @keyframes fadeDown {
