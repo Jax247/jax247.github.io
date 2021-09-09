@@ -3,7 +3,7 @@ const projects = [
     name: "Millenia Weather",
     type: "React App",
     tags: ["React", "CSS", "Accuweather API"],
-    screenshotpath: "./assets/Capture.PNG",
+    screenshotpath: "../assets/Screen Shot 2021-09-03 at 12.04.03 PM.png",
     description: "Weather App made With React, recieving data from the external Accuweather API to tell the weather information of a zip code.",
     srcLink: "https://github.com/Jax247/personal-projects/tree/master/millenia",
     liveLink: '#',
