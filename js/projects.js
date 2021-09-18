@@ -1,12 +1,12 @@
 const projects = [
   {
-    name: "Millenia Weather",
+    name: "PageMe",
     type: "React App",
-    tags: ["React", "CSS", "Accuweather API"],
-    screenshotpath: "../assets/Screen Shot 2021-09-03 at 12.04.03 PM.png",
-    description: "Weather App made With React, recieving data from the external Accuweather API to tell the weather information of a zip code.",
-    srcLink: "https://github.com/Jax247/personal-projects/tree/master/millenia",
-    liveLink: '#',
+    tags: ["React", "CSS","Express",  "GetStream API"],
+    screenshotpath: "./assets/pageMe-screenshot.png",
+    description: "Chatroom application created to be able to streamline paging medical professionals in a team. Utilizes the GetStream API and ExpressJS to allow authentication and messaging to either a whole team or specific person. ",
+    srcLink: "https://github.com/Jax247/personal-projects/tree/master/med-pager",
+    liveLink: 'https://pagemej.netlify.app',
   },
   {
     name: "Portfolio",
@@ -15,7 +15,7 @@ const projects = [
     screenshotpath: "./assets/portfolio-screenshot.png",
     description: "First iteration of my personal site that you're on now! Made entirely in HTML, SCSS, and Javascript/Jquery.",
     srcLink: "https://github.com/Jax247/personal-projects/tree/master/portfolio",
-    liveLink: 'jax247.github.io',
+    liveLink: 'jewanjeffries.com',
   },
   {
     name: "Crypt",
@@ -24,16 +24,16 @@ const projects = [
     screenshotpath: "./assets/crypt-screenshot.png",
     description: "Crypto Currency Price tracker made with React, Chart.js, and the CoinGecko crypto API. Displays price information for the top 15 coins complete with a graph displaying coin prices over various time periods. ",
     srcLink: "https://github.com/Jax247/personal-projects/tree/master/crypt",
-    liveLink: '#',
+    liveLink: 'https://krcointracker.netlify.app',
   },
   {
-    name: "LitFit",
-    type: "Login Form Example",
-    tags: ["HTML", "CSS"],
-    screenshotpath: "./assets/Capture.PNG",
-    description: "Login form created in HTML/CSS ",
-    srcLink: "#",
-    liveLink: '#',
+    name: "Millenia Weather",
+    type: "React App",
+    tags: ["React", "CSS", "Accuweather API"],
+    screenshotpath: "../assets/millenia-screenshot.png",
+    description: "Weather App made With React, recieving data from the external Accuweather API to tell the weather information of a zip code.",
+    srcLink: "https://github.com/Jax247/personal-projects/tree/master/millenia",
+    liveLink: 'milleniaweather.netlify.app',
   },
 ];
 
@@ -62,6 +62,11 @@ const projectTags = {
     name: 'JS',
     color: '#ffeb3b',
     icon: '/assets/icons8-javascript-30.png'
+  },
+  express: {
+    name: 'Express',
+    color: '#70c1ff',
+    icon: '/assets/expressicon.png'
   }
 
 }
