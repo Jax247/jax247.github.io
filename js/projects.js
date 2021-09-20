@@ -33,7 +33,7 @@ const projects = [
     screenshotpath: "../assets/millenia-screenshot.png",
     description: "Weather App made With React, recieving data from the external Accuweather API to tell the weather information of a zip code.",
     srcLink: "https://github.com/Jax247/personal-projects/tree/master/millenia",
-    liveLink: 'milleniaweather.netlify.app',
+    liveLink: 'https://milleniaweather.netlify.app',
   },
 ];
 
