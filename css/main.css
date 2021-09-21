@@ -565,6 +565,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 150vh;
   text-align: center;
   padding: 20px;
 }
@@ -589,7 +590,7 @@ footer {
 #projects .dot2 {
   position: absolute;
   right: 9%;
-  top: 380vh;
+  top: 380%;
   height: 140px;
   width: 140px;
   background: #b44972;
