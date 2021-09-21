@@ -1240,6 +1240,18 @@ footer {
   #skill-grid {
     height: 120%;
   }
+  #projects {
+    height: 60vh;
+  }
+  #projects .dot1 {
+    top: 120vh;
+  }
+  #projects .dot2 {
+    top: 240vh;
+  }
+  #projects .dot4 {
+    top: 160vh;
+  }
   #about {
     height: 70vh;
   }

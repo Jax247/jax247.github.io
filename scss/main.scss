@@ -1049,6 +1049,18 @@ footer {
     // margin-top: 20px;
     height: 120%;
   }
+  #projects {
+    height: 60vh;
+    .dot1 {
+      top: 120vh;
+    }
+    .dot2{
+      top: 240vh;
+    }
+    .dot4{
+      top: 160vh;
+    }
+  }
   #about {
     height: 70vh;
     #personal-content {
