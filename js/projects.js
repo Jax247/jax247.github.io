@@ -18,6 +18,15 @@ const projects = [
     liveLink: 'jewanjeffries.com',
   },
   {
+    name: "Solute ",
+    type: "Landing Page Example",
+    tags: ["HTML", 'CSS', 'Sass'],
+    screenshotpath: "./assets/solute-screenshot.png",
+    description: "Landing page layout example made with HTML and CSS for any business to market themselves",
+    srcLink: "https://github.com/Jax247/personal-projects/tree/master/solute",
+    liveLink: 'https://solute.netlify.app',
+  },
+  {
     name: "Crypt",
     type: "React App Example",
     tags: ["React",  "Sass", "Chart.js", "CoinGecko API"],
@@ -26,15 +35,15 @@ const projects = [
     srcLink: "https://github.com/Jax247/personal-projects/tree/master/crypt",
     liveLink: 'https://krcointracker.netlify.app',
   },
-  {
-    name: "Millenia Weather",
-    type: "React App",
-    tags: ["React", "CSS", "Accuweather API"],
-    screenshotpath: "../assets/millenia-screenshot.png",
-    description: "Weather App made With React, recieving data from the external Accuweather API to tell the weather information of a zip code.",
-    srcLink: "https://github.com/Jax247/personal-projects/tree/master/millenia",
-    liveLink: 'https://milleniaweather.netlify.app',
-  },
+  // {
+  //   name: "Millenia Weather",
+  //   type: "React App",
+  //   tags: ["React", "CSS", "Accuweather API"],
+  //   screenshotpath: "../assets/millenia-screenshot.png",
+  //   description: "Weather App made With React, recieving data from the external Accuweather API to tell the weather information of a zip code.",
+  //   srcLink: "https://github.com/Jax247/personal-projects/tree/master/millenia",
+  //   liveLink: 'https://milleniaweather.netlify.app',
+  // },
 ];
 
 const projectTags = {
