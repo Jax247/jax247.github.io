@@ -147,32 +147,3 @@ $(window).click(function (e) {
     closeModal();
   }
 });
-
-// Populate modal with data relevant to the project being passed in
-// function generateModal(e) {
-//   // get relevant divs to change data
-//   console.log(e);
-
-//   let project = projects.filter((p) => p.name === e.id)[0]; // comes back as array
-
-//   console.log(project);
-//   $("#modal-title").html(`${project.name} - ${project.type}`);
-//   $("#project-description").html(project.description);
-//   $("#project-demo").attr("src", `${project.screenshotpath}`);
-//   $(".github-link").attr("href", `${project.srcLink}`);
-//   $("#live-link").attr("href", `${project.liveLink}`);
-
-//   project.tags.forEach((tag) => {
-//     $("#tag-list").append(`<li>
-//                                 <img src="./assets/tick.png" alt="check"/>
-//                                 ${tag}
-//                             </li>`);
-//   });
-
-//   $(".modal").css("display", "flex");
-// }
-
-// function closeModal() {
-//   $("#tag-list").empty();
-//   $(".modal").css("display", "none");
-// }

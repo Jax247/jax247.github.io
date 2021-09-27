@@ -1,5 +1,5 @@
 $base: 0.6rem;
-$primary-color: #3253b7; 
+$primary-color: #3253b7;
 $secondary-color: #ffffff;
 $text-color: rgb(255, 255, 255);
 
@@ -18,14 +18,14 @@ html {
 
 body {
   // background-color: $primary-color;
-  background: linear-gradient(90deg, rgb(0, 0, 50) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1));
+  background: linear-gradient(90deg, rgb(0, 0, 50) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1));
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
 }
 
-body > footer {
+body>footer {
   background-color: #244dff;
   text-align: center;
 }
@@ -42,6 +42,7 @@ header {
   // position: relative;
 }
 
+
 #main-footer {
   background-image: url("../assets/wave.svg");
 }
@@ -49,6 +50,10 @@ header {
 section {
   color: $text-color;
   text-align: center;
+}
+
+.container {
+  margin: 100px 0;
 }
 
 section h1 {
@@ -70,6 +75,11 @@ footer {
   opacity: 0.85;
   width: 65px;
   height: 100vh;
+  display: none;
+
+  @media screen and (min-width: 800px) {
+    display: block;
+  }
 
   ul {
     list-style: none;
@@ -103,6 +113,7 @@ footer {
     background-color: #000;
     color: white;
     border-radius: 0 5px 5px 0;
+
     img {
       margin-left: 20px;
     }
@@ -132,14 +143,13 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      rgba(2, 0, 36, 1) 0%,
-      rgb(228, 42, 42) 30%,
-      rgba(0, 144, 255, 1) 100%
-    );
+    background: linear-gradient(rgba(2, 0, 36, 1) 0%,
+        rgb(228, 42, 42) 30%,
+        rgba(0, 144, 255, 1) 100%);
     clip-path: circle(15% at right 60%);
     animation: float 5s ease-in-out infinite;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -149,22 +159,16 @@ footer {
     width: 100%;
     height: 100%;
     background: rgb(63, 94, 251);
-    background: -moz-radial-gradient(
-      circle,
-      rgba(63, 94, 251, 1) 0%,
-      rgba(252, 70, 107, 1) 100%
-    );
-    background: -webkit-radial-gradient(
-      circle,
-      rgba(63, 94, 251, 1) 0%,
-      rgba(252, 70, 107, 1) 100%
-    );
-    background: radial-gradient(
-      circle,
-      rgba(63, 94, 251, 1) 0%,
-      rgba(252, 70, 107, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#fc466b",GradientType=1);
+    background: -moz-radial-gradient(circle,
+        rgba(63, 94, 251, 1) 0%,
+        rgba(252, 70, 107, 1) 100%);
+    background: -webkit-radial-gradient(circle,
+        rgba(63, 94, 251, 1) 0%,
+        rgba(252, 70, 107, 1) 100%);
+    background: radial-gradient(circle,
+        rgba(63, 94, 251, 1) 0%,
+        rgba(252, 70, 107, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb", endColorstr="#fc466b", GradientType=1);
     clip-path: circle(10% at 10% 10%);
     animation: float 2.5s ease-in-out infinite;
   }
@@ -180,16 +184,22 @@ footer {
   &-text {
     position: relative;
     color: $text-color;
-    width: 500px;
     height: 300px;
-    // top: 30%;
+    width: 300px;
     z-index: 0;
-    // left: 14%;
-    font-size: 2.5rem;
-    text-align: left;
-
+    font-size: 1.7rem;
+    text-align: center;
+    
+    @media (min-width: 600px) {
+      font-size: 2.5rem;
+      width: 500px;
+    }
     h1 {
       font-size: 3rem;
+
+      @media (min-width: 1200px) {
+        text-align: left;
+      }
     }
   }
 
@@ -201,8 +211,13 @@ footer {
     // left: 33%;
     // top: 30%;
     // margin-top: 150px;
+    display: none;
     perspective: 1000px;
     perspective-origin: 50% 50%;
+
+    @media (min-width: 1200px) {
+      display: block;
+    }
 
     .cube {
       //   margin: auto;
@@ -219,11 +234,9 @@ footer {
         width: 100%;
         opacity: 0.9;
         background: rgb(73, 130, 180);
-        background: radial-gradient(
-          circle,
-          rgb(43, 64, 198) 0%,
-          rgb(0, 157, 255) 100%
-        );
+        background: radial-gradient(circle,
+            rgb(43, 64, 198) 0%,
+            rgb(0, 157, 255) 100%);
         // border: solid 1px #eeeeee;
         color: #ffffff;
         text-align: center;
@@ -357,10 +370,17 @@ footer {
 }
 
 #about {
-  height: 100vh;
-  flex-direction: column;
-  text-align: center;
-  z-index: -1;
+
+  // height: 100vh;
+  justify-content: center;
+
+  .container {
+    width: 60%;
+    flex-direction: column;
+    text-align: center;
+    // z-index: -1;
+  }
+
   // background-image: linear-gradient($primary-color 25%, rgb(3, 17, 75) 100%);
 
   h1 {
@@ -374,16 +394,15 @@ footer {
     height: 70px;
     width: 70px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(
-      153deg,
-      rgba(180, 73, 114, 1) 0%,
-      rgba(77, 54, 199, 1) 100%
-    );
+    background: linear-gradient(153deg,
+        rgba(180, 73, 114, 1) 0%,
+        rgba(77, 54, 199, 1) 100%);
     border-radius: 50%;
     animation: float 3s ease-in-out infinite;
     z-index: -1;
 
   }
+
   .dot2 {
     position: absolute;
     right: 9%;
@@ -391,11 +410,9 @@ footer {
     height: 140px;
     width: 140px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(
-      153deg,
-      rgba(180, 73, 114, 1) 0%,
-      rgba(77, 54, 199, 1) 100%
-    );
+    background: linear-gradient(153deg,
+        rgba(180, 73, 114, 1) 0%,
+        rgba(77, 54, 199, 1) 100%);
     border-radius: 50%;
     animation: float 2s ease-in-out infinite;
     z-index: -1;
@@ -408,11 +425,9 @@ footer {
     height: 40px;
     width: 40px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(
-      153deg,
-      rgba(180, 73, 114, 1) 0%,
-      rgba(77, 54, 199, 1) 100%
-    );
+    background: linear-gradient(153deg,
+        rgba(180, 73, 114, 1) 0%,
+        rgba(77, 54, 199, 1) 100%);
     border-radius: 50%;
     animation: float 4s ease-in-out infinite;
     z-index: -1;
@@ -426,11 +441,9 @@ footer {
     height: 20px;
     width: 20px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(
-      153deg,
-      rgba(180, 73, 114, 1) 0%,
-      rgba(77, 54, 199, 1) 100%
-    );
+    background: linear-gradient(153deg,
+        rgba(180, 73, 114, 1) 0%,
+        rgba(77, 54, 199, 1) 100%);
     border-radius: 50%;
     animation: float 4s ease-in-out infinite;
     z-index: -1;
@@ -444,46 +457,77 @@ footer {
 
     #personal-content {
       display: flex;
-      flex-direction: row;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
       margin: 10px;
-      width: 80%;
+      flex-wrap: wrap;
+      // width: 80%;
+      padding: 0 20px;
+      
+      @media (min-width: 480px) {
+        flex-direction: row;
+        align-items: flex-start;
 
+      }
+      
       #content-text {
         margin: 20px;
-        font-size: 24px;
-        width: 600px;
+        font-size: 0.9rem;
+        width: 200px;
         height: 200px;
-        text-align: left;
+        text-align: center;
+        @media (min-width: 480px) {
+          width: 400px;
+          font-size: 18px;
+        }
+        @media (min-width: 700px) {
+          width: 600px;
+          font-size: 24px;
+        }
+        @media (min-width: 2034px) {
+          width: 600px;
+          font-size: 24px;
+          text-align: left;
+        }
       }
+      
       #self-photo {
         // background-color: #000;
         // position: relative;
         // height: 340px;
         margin: 10px;
-        width: 440px;
+        width: 200px;
         min-width: 200px;
         // right: 10%;
         // border-radius: 50%;
+        @media (min-width: 600px) {
+          width: 440px;
+          
+        }
       }
     }
 
     #skill-grid {
-      position: relative;
-      top: 100px;
-      width: 65%;
+      // position: relative;
+      width: 100%;
+      transform: scale(0.8);
+      // max-width: 1200px;
+      margin-top: 50px;
       margin: 10px;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-evenly;
-
+      
+      @media (min-width: 700px) {
+        margin-top: 100px;
+      }
       svg {
         min-height: 60px;
         min-width: 60px;
         height: 10%;
         width: 10%;
-        margin: 5px;
+        margin: 10px;
         // z-index: 0;
       }
     }
@@ -491,14 +535,26 @@ footer {
 }
 
 #projects {
+  justify-content: center;
+
   // background-image: linear-gradient(rgb(3, 17, 75) 0%, $primary-color 75%);
-  flex-direction: column;
-  //   justify-content: center;
-  align-items: center;
-  height: 150vh;
-  // background-color: $primary-color;
-  text-align: center;
-  padding: 20px;
+  .container {
+    margin: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // height: 150vh;
+    // background-color: $primary-color;
+    text-align: center;
+    // padding-right: 0;
+    padding: 20px 0;
+    @media (min-width: 800px) {
+      padding-left: 65px;
+    }
+    @media (min-width: 480px) {
+    }
+  }
+
 
   h1 {
     margin: 0 0 30px 0;
@@ -507,46 +563,41 @@ footer {
   .dot1 {
     position: absolute;
     left: 10%;
-    top: 325vh;
+    top: 125vh;
     height: 70px;
     width: 70px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(
-      153deg,
-      rgba(180, 73, 114, 1) 0%,
-      rgba(77, 54, 199, 1) 100%
-    );
+    background: linear-gradient(153deg,
+        rgba(180, 73, 114, 1) 0%,
+        rgba(77, 54, 199, 1) 100%);
     border-radius: 50%;
     animation: float 4.5s ease-in-out infinite;
   }
+
   .dot2 {
     position: absolute;
     right: 9%;
-    top: 380%;
+    top: 180%;
     height: 140px;
     width: 140px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(
-      153deg,
-      rgba(180, 73, 114, 1) 0%,
-      rgba(77, 54, 199, 1) 100%
-    );
+    background: linear-gradient(153deg,
+        rgba(180, 73, 114, 1) 0%,
+        rgba(77, 54, 199, 1) 100%);
     border-radius: 50%;
     animation: float 5s ease-in-out infinite;
   }
 
   .dot3 {
     position: absolute;
-    left: 52%;
-    top: 260vh;
+    left: 72%;
+    top: 250vh;
     height: 40px;
     width: 40px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(
-      153deg,
-      rgba(180, 73, 114, 1) 0%,
-      rgba(77, 54, 199, 1) 100%
-    );
+    background: linear-gradient(153deg,
+        rgba(180, 73, 114, 1) 0%,
+        rgba(77, 54, 199, 1) 100%);
     border-radius: 50%;
     animation: float 2s ease-in-out infinite;
     z-index: -1;
@@ -555,26 +606,26 @@ footer {
   .dot4 {
     position: absolute;
     left: 32%;
-    top: 340vh;
+    top: 240vh;
     height: 20px;
     width: 20px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(
-      153deg,
-      rgba(180, 73, 114, 1) 0%,
-      rgba(77, 54, 199, 1) 100%
-    );
+    background: linear-gradient(153deg,
+        rgba(180, 73, 114, 1) 0%,
+        rgba(77, 54, 199, 1) 100%);
     border-radius: 50%;
     animation: float 4s ease-in-out infinite;
   }
 
   .project-container {
-    width: 90%;
+    // width: 90%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    padding: 20px;
-
+    padding: 0;
+    @media (min-width: 480px) {
+      padding: 20px;
+    }
     .card {
       display: flex;
       flex-direction: column;
@@ -593,23 +644,31 @@ footer {
       backdrop-filter: blur(5px);
       transform-style: preserve-3d;
       transform: perspective(1000px);
- 
+
+      // @media (min-width: 768px) {
+      //   height: 700px;
+      // }
+
       img {
         position: relative;
         left: 0;
         top: 0;
-        height: 45%; 
+        height: 45%;
         width: 100%;
         border-radius: 25px 25px 0 0;
       }
+
       .simple-content {
         height: 35%;
         width: 100%;
+        padding: 0 10px;
+
         h1 {
           font-size: 20px;
           margin-top: 10px;
         }
       }
+
       .extra-content {
         display: flex;
         flex-flow: row nowrap;
@@ -641,6 +700,7 @@ footer {
             align-items: center;
             margin: 2px;
             border-radius: 25px;
+
             img {
               height: 25px;
               width: 25px;
@@ -648,6 +708,7 @@ footer {
             }
           }
         }
+
         .project-links {
           display: flex;
           flex-flow: column nowrap;
@@ -656,6 +717,7 @@ footer {
           height: 100%;
           border-radius: 0 0 25px 0;
           margin-bottom: 15px;
+
           a {
             background: transparent;
             border-radius: 25px;
@@ -669,35 +731,61 @@ footer {
             padding-top: 5px;
             font-size: 16px;
             transition: 0.5s;
+
             &:hover {
               background: #fff;
               color: $primary-color;
             }
+
             i {
               margin-right: 5px;
             }
           }
         }
       }
+
       // }
     }
   }
 }
 
 #contact {
-  height: 80vh;
-  text-align: center;
-  flex-direction: column;
+  // height: 80vh;
+  display: flex;
   align-items: center;
-
+  justify-content: center;
+  
+  .container {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+  h1 {
+    margin: 20px auto;
+  }
+  
   &-info {
+    display: flex;
+    max-width: 1150px;
+    flex-wrap: wrap;
     width: 70%;
-    height: 280px;
-    font-size: 1.7rem;
-    display: inherit;
-    flex-direction: row;
+    // height: 280px;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    
+    @media (min-width: 900px) {
+      font-size: 1.7rem;
+      flex-direction: row;
+    }
+
+    
+    &>div{
+      margin: 25px 0;
+    }
 
     #non-socials address {
       display: flex;
@@ -711,16 +799,19 @@ footer {
         color: #fff;
         text-align: left;
         cursor: pointer;
+
         i {
           margin-right: 8px;
         }
       }
     }
+
     #socials {
-      display: inherit;
+      display: flex;
       flex-direction: column;
       height: 200px;
       justify-content: space-evenly;
+
       .links {
         background: transparent;
         border-radius: 25px;
@@ -744,9 +835,6 @@ footer {
         }
       }
     }
-    // .contact-links {
-    // text-decoration: underline;
-    // }
   }
 }
 
@@ -761,323 +849,21 @@ footer {
 }
 
 @keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-20px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 .cube {
   animation: rotate 20s infinite linear;
-}
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto; /* 15% from the top and centered */
-    height: 600px;
-    overflow-y: hidden;
-    // padding: 20px;
-    min-width: 720px;
-    border-radius: 8px;
-    width: 80%; /* Could be more or less, depending on screen size */
-    transition: all 0.5s linear 0.5s;
-    animation: fadeDown 2s ease-in-out 0 1 forwards;
-
-    #modal-header {
-      // display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      color: #fff;
-      font-size: 20px;
-      height: 10%;
-      width: 100%;
-      background-color: #0057ba;
-      padding: 10px;
-    }
-
-    #modal-body {
-      // display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      height: 77%;
-      width: 100%;
-      padding: 10px;
-      background-color: $primary-color;
-
-      #project-details {
-        width: 40%;
-        height: 100%;
-        margin: 0;
-        background-color: $secondary-color;
-
-        #project-description {
-          height: 30%;
-          width: 100%;
-          padding: 5px;
-          color: #fff;
-          //   background-color: #000;
-          text-align: left;
-          font-size: 16px;
-        }
-
-        #project-attributes {
-          height: 70%;
-          width: 100%;
-          padding: 5px;
-          ul {
-            list-style: none;
-
-            li {
-              display: flex;
-              align-items: center;
-              margin: 10px;
-              img {
-                height: 20px;
-                width: 20px;
-                margin-right: 5px;
-              }
-            }
-          }
-        }
-      }
-
-      #project-demo {
-        width: 65%;
-        height: 100%;
-        margin: 0;
-        background-color: rgb(12, 45, 138);
-      }
-    }
-
-    #modal-footer {
-      // display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      height: 13%;
-      width: 100%;
-      background-color: rgb(23, 157, 235);
-      padding: 10px;
-
-      .github-link {
-        text-align: center;
-        text-decoration: none;
-        width: 100px;
-        height: 40px;
-        border-radius: 4px;
-        padding: 7px;
-        margin: 0px 5px 0px 7px;
-        border: none;
-        background-color: #000;
-        color: white;
-        &#live-link {
-          width: 120px;
-        }
-        i {
-          margin: 5px;
-        }
-      }
-    }
-  }
-}
-
-/* The Close Button */
-.close {
-  color: #fff;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-// @media screen and (max-width: 1200px) {
-//   #home {
-//     flex-direction: column;
-//   }
-//   .cube {
-//     transform: scale(0.4);
-//   }
-//   //   .front {
-//   //     transform: translateZ(50px);
-//   //   }
-// }
-
-// Large desktop display
-@media screen and (max-width: 1200px) {
-  // .card {
-  //   height: 60vh;
-  // }
-  #home {
-    align-items: center;
-    justify-content: center;
-
-    &-cube {
-      display: none;
-    }
-    &-text {
-      text-align: center;
-      //   left: 65px;
-    }
-  }
-}
-
-// tablets and the like
-// @media screen and (max-width: 798px) {
-//   #projects {
-//     // height: 170vh;
-//   }
-// }
-@media screen and (max-width: 1024px) {
-
-  #home-text {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-  #about {
-    height: 160vh;
-
-    #personal-content {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      #content-text {
-        width: 350px;
-        //   font-size: .9rem;
-        text-align: center;
-      }
-    }
-    #skill-grid {
-      margin-top: 40px;
-    }
-  }
-  // #projects {
-  //   height: 100vh;
-  // }
-}
-// Mobile Devices
-@media screen and (max-width: 480px) {
-
-  #sidebar {
-    display: none;
-  }
-
-  #home-text {
-    font-size: 1.2rem;
-    text-align: center;
-    h1 {
-      font-size: 20px;
-    }
-  }
-  #about {
-    height: 190vh;
-    #about-content {
-      height: 800px;
-    }
-
-    #personal-content {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      #content-text {
-        width: 200px;
-        font-size: 0.9rem;
-        text-align: center;
-      }
-      #self-photo {
-        width: 200px;
-      }
-    }
-    #skill-grid {
-      svg {
-        height: 8%;
-        width: 8%;
-        transition: all 0.5s;
-        &:hover {
-          height: 12%;
-          width: 12%;
-        }
-      }
-    }
-  }
-  #projects {
-    height: 340vh;
-    // position: relative;
-    // margin-top: 500px;
-  }
-
-  #contact {
-    height: 80vh;
-    h1 {
-      margin-top: 20px;
-    }
-    #contact-info {
-      flex-direction: column;
-      height: 400px;
-      margin-top: 10px;
-      a {
-        font-size: 1rem;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 2500px) {
-  #skill-grid {
-    // margin-top: 20px;
-    height: 120%;
-  }
-  #projects {
-    height: 60vh;
-    .dot1 {
-      top: 120vh;
-    }
-    .dot2{
-      top: 240vh;
-    }
-    .dot4{
-      top: 160vh;
-    }
-  }
-  #about {
-    height: 70vh;
-    #personal-content {
-      width: 40%;
-      justify-content: space-between;
-      // #self-photo {
-      //   // height: 400px;
-      //   // width: 300px;
-      // }
-      #content-text {
-        width: 1000px;
-        p {
-          font-size: 2rem;
-        }
-      }
-    }
-  }
 }
 
 @keyframes fadeDown {
@@ -1085,30 +871,9 @@ footer {
     opacity: 0;
     transform: translateY(-100px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
-
-// .ball {
-//   display: block;
-//   background: black;
-//   margin: 0;
-//   border-radius: 50%;
-//   height: 300px;
-//   width: 300px;
-//   background: radial-gradient(circle at 100px 100px, #5cabff, #000);
-// }
-// .ball .shadow {
-// position: absolute;
-// width: 100%;
-// height: 100%;
-// background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
-// -webkit-transform: rotateX(90deg) translateZ(-150px);
-// -moz-transform: rotateX(90deg) translateZ(-150px);
-// -ms-transform: rotateX(90deg) translateZ(-150px);
-// -o-transform: rotateX(90deg) translateZ(-150px);
-// transform: rotateX(90deg) translateZ(-150px);
-// z-index: -1;
-// }
