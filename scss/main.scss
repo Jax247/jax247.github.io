@@ -18,14 +18,19 @@ html {
 
 body {
   // background-color: $primary-color;
-  background: linear-gradient(90deg, rgb(0, 0, 50) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1));
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 50) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1)
+  );
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
 }
 
-body>footer {
+body > footer {
   background-color: #244dff;
   text-align: center;
 }
@@ -41,7 +46,6 @@ header {
   display: flex;
   // position: relative;
 }
-
 
 #main-footer {
   background-image: url("../assets/wave.svg");
@@ -143,9 +147,11 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(2, 0, 36, 1) 0%,
-        rgb(228, 42, 42) 30%,
-        rgba(0, 144, 255, 1) 100%);
+    background: linear-gradient(
+      rgba(2, 0, 36, 1) 0%,
+      rgb(228, 42, 42) 30%,
+      rgba(0, 144, 255, 1) 100%
+    );
     clip-path: circle(15% at right 60%);
     animation: float 5s ease-in-out infinite;
   }
@@ -159,15 +165,21 @@ footer {
     width: 100%;
     height: 100%;
     background: rgb(63, 94, 251);
-    background: -moz-radial-gradient(circle,
-        rgba(63, 94, 251, 1) 0%,
-        rgba(252, 70, 107, 1) 100%);
-    background: -webkit-radial-gradient(circle,
-        rgba(63, 94, 251, 1) 0%,
-        rgba(252, 70, 107, 1) 100%);
-    background: radial-gradient(circle,
-        rgba(63, 94, 251, 1) 0%,
-        rgba(252, 70, 107, 1) 100%);
+    background: -moz-radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
+    background: -webkit-radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
+    background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb", endColorstr="#fc466b", GradientType=1);
     clip-path: circle(10% at 10% 10%);
     animation: float 2.5s ease-in-out infinite;
@@ -189,21 +201,20 @@ footer {
     z-index: 0;
     font-size: 1.7rem;
     text-align: center;
-    
+
     @media (min-width: 600px) {
-      font-size: 2.5rem; 
+      font-size: 2.5rem;
       width: 500px;
     }
     h1 {
       font-size: 3rem;
-
     }
     @media (min-width: 1200px) {
-      h1,p{
+      h1,
+      p {
         text-align: left;
       }
     }
-    
   }
 
   &-cube {
@@ -237,9 +248,11 @@ footer {
         width: 100%;
         opacity: 0.9;
         background: rgb(73, 130, 180);
-        background: radial-gradient(circle,
-            rgb(43, 64, 198) 0%,
-            rgb(0, 157, 255) 100%);
+        background: radial-gradient(
+          circle,
+          rgb(43, 64, 198) 0%,
+          rgb(0, 157, 255) 100%
+        );
         // border: solid 1px #eeeeee;
         color: #ffffff;
         text-align: center;
@@ -308,9 +321,6 @@ footer {
   justify-content: center;
   position: relative;
   top: 20%;
-  //   position: absolute;
-  //   left: 50%;
-  //   top: 90%;
 }
 
 .chevron {
@@ -373,18 +383,12 @@ footer {
 }
 
 #about {
-
-  // height: 100vh;
   justify-content: center;
-
   .container {
     width: 60%;
     flex-direction: column;
     text-align: center;
-    // z-index: -1;
   }
-
-  // background-image: linear-gradient($primary-color 25%, rgb(3, 17, 75) 100%);
 
   h1 {
     margin: 50px;
@@ -397,13 +401,14 @@ footer {
     height: 70px;
     width: 70px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(153deg,
-        rgba(180, 73, 114, 1) 0%,
-        rgba(77, 54, 199, 1) 100%);
+    background: linear-gradient(
+      153deg,
+      rgba(180, 73, 114, 1) 0%,
+      rgba(77, 54, 199, 1) 100%
+    );
     border-radius: 50%;
     animation: float 3s ease-in-out infinite;
     z-index: -1;
-
   }
 
   .dot2 {
@@ -413,9 +418,11 @@ footer {
     height: 140px;
     width: 140px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(153deg,
-        rgba(180, 73, 114, 1) 0%,
-        rgba(77, 54, 199, 1) 100%);
+    background: linear-gradient(
+      153deg,
+      rgba(180, 73, 114, 1) 0%,
+      rgba(77, 54, 199, 1) 100%
+    );
     border-radius: 50%;
     animation: float 2s ease-in-out infinite;
     z-index: -1;
@@ -428,13 +435,14 @@ footer {
     height: 40px;
     width: 40px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(153deg,
-        rgba(180, 73, 114, 1) 0%,
-        rgba(77, 54, 199, 1) 100%);
+    background: linear-gradient(
+      153deg,
+      rgba(180, 73, 114, 1) 0%,
+      rgba(77, 54, 199, 1) 100%
+    );
     border-radius: 50%;
     animation: float 4s ease-in-out infinite;
     z-index: -1;
-
   }
 
   .dot4 {
@@ -444,13 +452,14 @@ footer {
     height: 20px;
     width: 20px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(153deg,
-        rgba(180, 73, 114, 1) 0%,
-        rgba(77, 54, 199, 1) 100%);
+    background: linear-gradient(
+      153deg,
+      rgba(180, 73, 114, 1) 0%,
+      rgba(77, 54, 199, 1) 100%
+    );
     border-radius: 50%;
     animation: float 4s ease-in-out infinite;
     z-index: -1;
-
   }
 
   &-content {
@@ -467,13 +476,12 @@ footer {
       flex-wrap: wrap;
       // width: 80%;
       padding: 0 20px;
-      
+
       @media (min-width: 480px) {
         flex-direction: row;
         align-items: flex-start;
-
       }
-      
+
       #content-text {
         margin: 20px;
         font-size: 0.9rem;
@@ -494,7 +502,7 @@ footer {
           text-align: left;
         }
       }
-      
+
       #self-photo {
         // background-color: #000;
         // position: relative;
@@ -506,7 +514,6 @@ footer {
         // border-radius: 50%;
         @media (min-width: 600px) {
           width: 440px;
-          
         }
       }
     }
@@ -521,7 +528,7 @@ footer {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-evenly;
-      
+
       @media (min-width: 700px) {
         margin-top: 100px;
       }
@@ -558,7 +565,6 @@ footer {
     }
   }
 
-
   h1 {
     margin: 0 0 30px 0;
   }
@@ -570,9 +576,11 @@ footer {
     height: 70px;
     width: 70px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(153deg,
-        rgba(180, 73, 114, 1) 0%,
-        rgba(77, 54, 199, 1) 100%);
+    background: linear-gradient(
+      153deg,
+      rgba(180, 73, 114, 1) 0%,
+      rgba(77, 54, 199, 1) 100%
+    );
     border-radius: 50%;
     animation: float 4.5s ease-in-out infinite;
   }
@@ -584,9 +592,11 @@ footer {
     height: 140px;
     width: 140px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(153deg,
-        rgba(180, 73, 114, 1) 0%,
-        rgba(77, 54, 199, 1) 100%);
+    background: linear-gradient(
+      153deg,
+      rgba(180, 73, 114, 1) 0%,
+      rgba(77, 54, 199, 1) 100%
+    );
     border-radius: 50%;
     animation: float 5s ease-in-out infinite;
   }
@@ -598,9 +608,11 @@ footer {
     height: 40px;
     width: 40px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(153deg,
-        rgba(180, 73, 114, 1) 0%,
-        rgba(77, 54, 199, 1) 100%);
+    background: linear-gradient(
+      153deg,
+      rgba(180, 73, 114, 1) 0%,
+      rgba(77, 54, 199, 1) 100%
+    );
     border-radius: 50%;
     animation: float 2s ease-in-out infinite;
     z-index: -1;
@@ -613,9 +625,11 @@ footer {
     height: 20px;
     width: 20px;
     background: rgb(180, 73, 114);
-    background: linear-gradient(153deg,
-        rgba(180, 73, 114, 1) 0%,
-        rgba(77, 54, 199, 1) 100%);
+    background: linear-gradient(
+      153deg,
+      rgba(180, 73, 114, 1) 0%,
+      rgba(77, 54, 199, 1) 100%
+    );
     border-radius: 50%;
     animation: float 4s ease-in-out infinite;
   }
@@ -757,7 +771,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   .container {
     display: flex;
     width: 100%;
@@ -769,7 +783,7 @@ footer {
   h1 {
     margin: 20px auto;
   }
-  
+
   &-info {
     display: flex;
     max-width: 1150px;
@@ -779,14 +793,13 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
+
     @media (min-width: 900px) {
       font-size: 1.7rem;
       flex-direction: row;
     }
 
-    
-    &>div{
+    & > div {
       margin: 25px 0;
     }
 
