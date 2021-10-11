@@ -314,7 +314,7 @@ footer {
 }
 
 .chevron {
-  position: absolute;
+  // position: absolute;
   width: $base * 3.5;
   height: $base * 0.8;
   opacity: 0;
@@ -440,7 +440,7 @@ footer {
   .dot4 {
     position: absolute;
     left: 52%;
-    top: 220vh;
+    top: 340vh;
     height: 20px;
     width: 20px;
     background: rgb(180, 73, 114);
@@ -594,7 +594,7 @@ footer {
   .dot3 {
     position: absolute;
     left: 72%;
-    top: 250vh;
+    top: 280vh;
     height: 40px;
     width: 40px;
     background: rgb(180, 73, 114);
@@ -608,8 +608,8 @@ footer {
 
   .dot4 {
     position: absolute;
-    left: 32%;
-    top: 240vh;
+    left: 22%;
+    top: 380vh;
     height: 20px;
     width: 20px;
     background: rgb(180, 73, 114);

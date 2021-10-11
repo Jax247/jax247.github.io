@@ -363,7 +363,6 @@ footer {
 }
 
 .chevron {
-  position: absolute;
   width: 2.1rem;
   height: 0.48rem;
   opacity: 0;
@@ -512,7 +511,7 @@ footer {
 #about .dot4 {
   position: absolute;
   left: 52%;
-  top: 220vh;
+  top: 340vh;
   height: 20px;
   width: 20px;
   background: #b44972;
@@ -703,7 +702,7 @@ footer {
 #projects .dot3 {
   position: absolute;
   left: 72%;
-  top: 250vh;
+  top: 280vh;
   height: 40px;
   width: 40px;
   background: #b44972;
@@ -716,8 +715,8 @@ footer {
 
 #projects .dot4 {
   position: absolute;
-  left: 32%;
-  top: 240vh;
+  left: 22%;
+  top: 380vh;
   height: 20px;
   width: 20px;
   background: #b44972;
