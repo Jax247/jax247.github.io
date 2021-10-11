@@ -235,7 +235,7 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  #home-text h1 {
+  #home-text h1, #home-text p {
     text-align: left;
   }
 }

@@ -33,6 +33,7 @@ function generateProjectCards(e) {
     
     previewImg = $("<img></img>");
     previewImg.attr("src", `${project.screenshotpath}`);
+    previewImg.attr("alt", `${project.name}-screenshot`);
     
     simpleContent = $("<div></div>");
     simpleContent.addClass("simple-content");
@@ -63,7 +64,7 @@ function generateProjectCards(e) {
       newTag.addClass("tag");
       newTag.css("background-color", color);
       
-      newTag.append($(`<img></img>`).attr("src", `${icon}`));
+      newTag.append($(`<img></img>`).attr("src", `${icon}`).attr("alt", tagName));
       newTag.append($(`<p></p>`).text(tagName));
 
       tags.append(newTag);
