@@ -69,6 +69,7 @@ footer {
 
 #sidebar {
   position: fixed;
+  z-index: 5;
   background-color: #000;
   padding-top: 80px;
   opacity: 0.85;
