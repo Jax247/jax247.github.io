@@ -61,6 +61,7 @@ const CardBody = styled.div`
 `;
 const CardBodyText = styled.div`
   min-height: 0;
+  color: #fff;
 `;
 const ExtraContent = styled.div`
   /* display: flex; */
