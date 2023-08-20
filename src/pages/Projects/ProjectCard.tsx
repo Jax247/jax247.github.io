@@ -120,6 +120,7 @@ const TagContainer = styled.div<{ bps: { md: boolean; lg: boolean } }>`
 `;
 const Tag = styled.div<{ color: string; bps: { md: boolean; lg: boolean } }>`
   background-color: ${(props) => (props.bps.lg ? "unset" : props.color)};
+  color: #ffffff;
   width: min-content;
   display: none;
   max-height: ${(props) => (props.bps.lg ? "unset" : "25px")};
