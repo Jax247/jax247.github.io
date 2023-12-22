@@ -25,6 +25,7 @@ const Container = styled.div`
   border-radius: 25px;
   display: flex;
   height: 100%;
+  max-height: 400px;
   opacity: 1;
 `;
 
