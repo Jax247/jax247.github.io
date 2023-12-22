@@ -71,6 +71,7 @@ const ExtraContent = styled.div`
 `;
 const LinkContainer = styled.div`
   display: flex;
+  justify-content:center;
   gap: 20px;
   /* position: absolute; */
   bottom: 0;
